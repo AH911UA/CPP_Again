@@ -25,7 +25,7 @@ public:
         if(*this == rht)
             return *this;
 
-        this->itsRadius = rht.GetRadius();
+        *this->itsRadius = rht.GetRadius();
         return *this;
     }
 
