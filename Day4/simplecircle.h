@@ -10,6 +10,8 @@ public:
      SimpleCircle(const SimpleCircle&);
     ~SimpleCircle();
 
+     int GetRadius() const { return *itsRadius; }
+
      void operator++() { itsRadius++;  }
      void operator++(int) { ++itsRadius; }
 
@@ -23,7 +25,7 @@ public:
         if(*this == rht)
             return *this;
 
-        this->itsRadius = rht.itsRadius;
+        this->itsRadius = rht.GetRadius();
         return *this;
     }
 
