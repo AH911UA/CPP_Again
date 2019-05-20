@@ -13,7 +13,6 @@ enum chess
 
 int main()
 {
-std::locale::global(std::locale("en_US.UTF-8"));
     const int arrRow = 8;
     const int arrCol = 8;
 
